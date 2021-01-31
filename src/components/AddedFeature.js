@@ -7,10 +7,10 @@ const AddedFeature = props => {
   return (
 
 
-    <li key={props.id}>
+    <li>
 
-      <button className="button" onClick={() => {props.removePart(props)}}>X</button>
-      {props.name}
+      <button className="button" onClick={() => {props.removePart(props.feature)}}>X</button>
+      {props.feature.name}
     </li>
       )
 
